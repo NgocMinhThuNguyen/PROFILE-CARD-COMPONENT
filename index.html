@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Profile card component</title>
@@ -12,27 +15,26 @@
 <body>
 
   <main>
-    <article>
-
-      <div class="main-pattern">
-        <img src="images/bg-pattern-card.svg" alt="Background pattern" class="background-pattern">
-        <img src="images/image-victor.jpg" alt="Victor avatar" class="avatar">
+    <section class="flex-box flex-column">
+      <div class="avatar-container" aria-label="Victor Crest's avatar">
+        <img src="images/image-victor.jpg" alt="Victor Crest" class="avatar">
+      </div>
+      
+      <div class="wrapper flex-box">
+        <h1>Victor Crest</h1>
+        <p aria-label="Age">26</p>
       </div>
 
-      <div class="main-content">
-          <h1>Victor Crest <span>26</span></h1>
-          <h2>London</h2>
+      <p aria-label="Location">London</p>
 
-          <div class="line"></div>
+      <div class="decoration-line"></div>
 
-          <ul class="data">
-            <li>80K <span>Followers</span></li>
-            <li>803K <span>Likes</span></li>
-            <li>1.4K <span>Photos</span></li>
-          </ul>
-      </div>
-
-    </article>
+      <ol role="list" aria-label="Victor Crest's interactivity" class="interactivity flex-box">
+        <li class="flex-box flex-column">80K <span>Followers</span></li>
+        <li class="flex-box flex-column">803K <span>Likes</span></li>
+        <li class="flex-box flex-column">1.4K <span>Photos</span></li>
+      </ol>
+    </section>
   </main>
 
   <footer>
